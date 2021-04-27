@@ -1,0 +1,384 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Directing | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+
+    <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body class="ov-hid">
+
+
+    <!-- Header Section Begin -->
+    <header class="header header--normal">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="{% url 'home' %}"><h3>Dr. Santiago Duque</h3></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'home' %}">HOME</a></li>
+                                <li><a href="#">CURSOS</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'cursos' %}">Trastornos de ansiedad</a></li>
+										<li><a href="{% url 'cursos' %}">Trastorno obsesivo-compulsivo</a></li>
+										<li><a href="{% url 'cursos' %}">Trastornos de la alimentación</a></li>
+										<li><a href="{% url 'cursos' %}">Trastornos de la personalidad</a></li>
+										<li><a href="{% url 'cursos' %}">Trastorno de estrés post-traumático</a></li>
+										<li><a href="{% url 'cursos' %}">Trastornos psicóticos</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">BUSCAR</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__menu__right">
+                            <a href="#" class="login-btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Inicia Sesión</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="recipient-name" class="col-form-label">Correo Electrónico:</label>
+	            <input type="email" class="form-control" required>
+	          </div>
+	          <div class="form-group">
+	            <label for="message-text" class="col-form-label">Contraseña:</label>
+	            <input type="password" class="form-control" required>
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Ingresar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+    
+
+    <!-- Listing Section Begin -->
+    <section class="listing">
+    	<div class="row col">
+     		<img src="https://cdn.domestika.org/c_fill,dpr_1.0,f_auto,q_auto,w_880/v1616151750/banner-covers/000/001/160/1160-original.png?1616151750" class="col">
+     	</div>
+     	<br><hr><br>
+        <div class="listing__text__top">
+            <div class="listing__text__top__left">
+                <h4>Cursos online.</h4>
+                <span>18 Resultado de Cursos</span>
+            </div>
+            
+        </div>
+         <div class="container">
+	        <div class="row">
+	            <div class="listing__item col-md-4">
+	                <div class="listing__item__pic">
+	                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+			              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9ArJxt-lJ_M"
+			                allowfullscreen></iframe>
+			            </div>
+	                </div>
+	                <div class="listing__item__text">
+	                    <div class="listing__item__text__inside">
+	                        <h5>Baja autoestima Vs Sinidrome del impostor</h5>
+	                        <div class="listing__item__text__rating">
+	                            <div class="listing__item__rating__star">
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star-half_alt"></span>
+	                            </div>
+	                            <h6>$28000</h6>
+	                        </div>
+	                    </div>
+	                    <div class="listing__item__text__info">
+	                        <div class="listing__item__text__info__left">
+	                            <img src="{% static 'img/categories/cat-5.png' %}" alt="">
+	                            <span class="btn btn-success" id="pago">Comprar</span>
+	                        </div>
+	                        <!--div class="listing__item__text__info__right">Open Now</div-->
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="listing__item col-md-4">
+	                <div class="listing__item__pic set-bg">
+	                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+			              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9ArJxt-lJ_M"
+			                allowfullscreen></iframe>
+			            </div>
+	                    <div class="listing__item__pic__tag">Popular</div>
+	                    <div class="listing__item__pic__btns">
+	                        <a href="#"><span class="icon_zoom-in_alt"></span></a>
+	                        <a href="#"><span class="icon_heart_alt"></span></a>
+	                    </div>
+	                </div>
+	                <div class="listing__item__text">
+	                    <div class="listing__item__text__inside">
+	                        <h5>Baja autoestima Vs Sinidrome del impostor</h5>
+	                        <div class="listing__item__text__rating">
+	                            <div class="listing__item__rating__star">
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star-half_alt"></span>
+	                            </div>
+	                            <h6>$28000</h6>
+	                        </div>
+	                    </div>
+	                    <div class="listing__item__text__info">
+	                        <div class="listing__item__text__info__left">
+	                            <img src="{% static 'img/categories/cat-5.png' %}" alt="">
+	                            <span class="btn btn-success" id="pago_2">Comprar</span>
+	                        </div>
+	                        <!--div class="listing__item__text__info__right">Open Now</div-->
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="listing__item col-md-4">
+	                <div class="listing__item__pic set-bg">
+	                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+			              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9ArJxt-lJ_M"
+			                allowfullscreen></iframe>
+			            </div>
+	                    <div class="listing__item__pic__tag">Popular</div>
+	                    <div class="listing__item__pic__btns">
+	                        <a href="#"><span class="icon_zoom-in_alt"></span></a>
+	                        <a href="#"><span class="icon_heart_alt"></span></a>
+	                    </div>
+	                </div>
+	                <div class="listing__item__text">
+	                    <div class="listing__item__text__inside">
+	                        <h5>Baja autoestima Vs Sinidrome del impostor</h5>
+	                        <div class="listing__item__text__rating">
+	                            <div class="listing__item__rating__star">
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star-half_alt"></span>
+	                            </div>
+	                            <h6>$28000</h6>
+	                        </div>
+	                    </div>
+	                    <div class="listing__item__text__info">
+	                        <div class="listing__item__text__info__left">
+	                            <img src="{% static 'img/categories/cat-5.png' %}" alt="">
+	                            <span class="btn btn-success" id="pago_3">Comprar</span>
+	                        </div>
+	                        <!--div class="listing__item__text__info__right">Open Now</div-->
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="listing__item col-md-4">
+	                <div class="listing__item__pic set-bg">
+	                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+			              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9ArJxt-lJ_M"
+			                allowfullscreen></iframe>
+			            </div>
+	                    <div class="listing__item__pic__tag">Popular</div>
+	                    <div class="listing__item__pic__btns">
+	                        <a href="#"><span class="icon_zoom-in_alt"></span></a>
+	                        <a href="#"><span class="icon_heart_alt"></span></a>
+	                    </div>
+	                </div>
+	                <div class="listing__item__text">
+	                    <div class="listing__item__text__inside">
+	                        <h5>Baja autoestima Vs Sinidrome del impostor</h5>
+	                        <div class="listing__item__text__rating">
+	                            <div class="listing__item__rating__star">
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star"></span>
+	                                <span class="icon_star-half_alt"></span>
+	                            </div>
+	                            <h6>$28000</h6>
+	                        </div>
+	                    </div>
+	                    <div class="listing__item__text__info">
+	                        <div class="listing__item__text__info__left">
+	                            <img src="{% static 'img/categories/cat-5.png' %}" alt="">
+	                            <span class="btn btn-success" id="pago_4">Comprar</span>
+	                        </div>
+	                        <!--div class="listing__item__text__info__right">Open Now</div-->
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+    </section>
+    <!-- Listing Section End -->
+
+    <!-- Filter Begin -->
+    <div class="filter">
+        <div class="filter__title">
+            <h5><i class="fa fa-filter"></i> Filtrar</h5>
+        </div><br><br>
+        <div class="filter__tags">
+            
+            <label for="coupon">
+                Psicopatía
+                <input type="checkbox" id="coupon">
+                <span class="checkmark"></span>
+            </label>
+            <label for="coupon">
+                Ansiedad
+                <input type="checkbox" id="coupon">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <!-- Filter End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="https://checkout.wompi.co/widget.js"></script>
+
+
+    <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+	<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+	<script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+	<script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+	<script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+
+	<!-- Template Main JS File -->
+	<script src="{% static 'assets/js/main.js' %}"></script>
+
+
+
+    <script>
+    	$("#pago").click(function(){
+    		var checkout = new WidgetCheckout({
+			  currency: 'COP',
+			  amountInCents: 2800000,
+			  reference: 'AD000000100',
+			  publicKey: 'pub_test_Zs0LVNeaLOG440kKSAp0YRXBO8M0VBP0',
+			  redirectUrl: 'https://transaction-redirect.wompi.co/check'
+			})
+			checkout.open(function ( result ) {
+				var transaction = result.transaction
+				console.log('Transaction ID: ', transaction.id)
+				console.log('Transaction object: ', transaction)
+			})
+    	});
+
+    	$("#pago_2").click(function(){
+    		var checkout = new WidgetCheckout({
+			  currency: 'COP',
+			  amountInCents: 2800000,
+			  reference: 'AD000000100',
+			  publicKey: 'pub_test_Zs0LVNeaLOG440kKSAp0YRXBO8M0VBP0',
+			  redirectUrl: 'https://transaction-redirect.wompi.co/check'
+			})
+			checkout.open(function ( result ) {
+				var transaction = result.transaction
+				console.log('Transaction ID: ', transaction.id)
+				console.log('Transaction object: ', transaction)
+			})
+    	});
+
+    	$("#pago_3").click(function(){
+    		var checkout = new WidgetCheckout({
+			  currency: 'COP',
+			  amountInCents: 2800000,
+			  reference: 'AD000000100',
+			  publicKey: 'pub_test_Zs0LVNeaLOG440kKSAp0YRXBO8M0VBP0',
+			  redirectUrl: 'https://transaction-redirect.wompi.co/check'
+			})
+			checkout.open(function ( result ) {
+				var transaction = result.transaction
+				console.log('Transaction ID: ', transaction.id)
+				console.log('Transaction object: ', transaction)
+			})
+    	});
+
+    	$("#pago_4").click(function(){
+    		var checkout = new WidgetCheckout({
+			  currency: 'COP',
+			  amountInCents: 2800000,
+			  reference: 'AD000000100',
+			  publicKey: 'pub_test_Zs0LVNeaLOG440kKSAp0YRXBO8M0VBP0',
+			  redirectUrl: 'https://transaction-redirect.wompi.co/check'
+			})
+			checkout.open(function ( result ) {
+				var transaction = result.transaction
+				console.log('Transaction ID: ', transaction.id)
+				console.log('Transaction object: ', transaction)
+			})
+    	});
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SANTIAGO DUQUE</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{% static 'login/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'login/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'login/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'login/css/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">DR. SANTIAGO DUQUE</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Dropdown
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+	      </li>
+	    </ul>
+	    <!--form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form-->
+	  </div>
+	</nav>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" method="post">{% csrf_token %}
+					<span class="login100-form-title p-b-34">
+						Registrate
+					</span>
+					<div class="row col-12">
+						<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20 col" data-validate="Debe ingresar EMAIL">
+							<input id="first-name" class="input100" type="email" name="email" required autofocus placeholder="Correo electrónico">
+							<span class="focus-input100"></span>
+						</div>
+					</div>
+					<div class="row col-12">
+						<div class="wrap-input100 rs1-wrap-input100 m-b-20 col" >
+							<input class="input100" type="number" name="tlf" placeholder="Teléfono">
+							<span class="focus-input100"></span>
+						</div>
+					</div>
+					<div class="row col-12">
+						<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20 col" data-validate="Debe ingresar PASS">
+							<input class="input100" type="password" name="pass" required placeholder="Contraseña">
+							<span class="focus-input100"></span>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-4">
+							<select class="form-control" name="dia" id="dia">
+								<option>DIA</option>
+							</select>
+						</div>
+
+						<div class="col-md-4">
+							<select class="form-control" name="mes" id="mes">
+								<option>MES</option>
+								<option>ENERO</option>
+								<option>FEBRERO</option>
+								<option>MARZO</option>
+								<option>ABRIL</option>
+								<option>MAYO</option>
+								<option>JUNIO</option>
+								<option>JULIO</option>
+								<option>AGOSTO</option>
+								<option>SEPTIEMBRE</option>
+								<option>OCTUBRE</option>
+								<option>NOVIEMBRE</option>
+								<option>DICIEMBRE</option>
+							</select>
+						</div>
+
+						<div class="col-md-4">
+							<select class="form-control" name="anio" id="anio">
+								<option>AÑO&nbsp;</option>
+							</select>
+						</div>
+
+					</div>
+					
+					<div style="margin-top: 15px;" class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Ingresar
+						</button>
+					</div>
+
+					<div class="w-full text-center p-t-27 p-b-239">
+						<span class="txt1">
+							Al hacer clic en "Crear cuenta" certifico que tengo 16 años o más y acepto las Condiciones de Uso, la Política de Privacidad, la Política de Cookies y recibir novedades y promociones.
+						</span>
+					</div>
+
+					<!--div class="w-full text-center">
+						<a href="#" class="txt3">
+							REGÍSTRATE
+						</a>
+					</div-->
+				</form>
+
+				<div class="login100-more" style="background-image: url('{% static 'login/images/bg-01.jpg' %} ');"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'login/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/select2/select2.min.js' %}"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static 'login/vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/js/main.js' %}"></script>
+
+
+	<script>
+		var myDate = new Date();
+		var year = myDate.getFullYear();
+		for(var d = 1; d < 32; d++){
+			$("#dia").append('<option value="'+d+'">'+d+'</option>');
+		}
+		
+		for(var i = 1950; i < year+1; i++){
+			$("#anio").append('<option value="'+i+'">'+i+'</option>');
+			//document.write('<option value="'+i+'">'+i+'</option>');
+		}
+	</script>
+
+</body>
+</html>
